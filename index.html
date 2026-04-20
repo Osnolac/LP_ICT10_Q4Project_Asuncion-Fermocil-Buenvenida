@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <title>Grade 10 Classmates</title>
+
+    <style>
+        body {
+            background-color: #7babd8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ffffff;
+        }
+        p {
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container" style="text-align: center; background-color: #130081;">
+        <h1> Grade 10 Classmates System</h1>
+    <p> Add and view your classmates easily</p>
+    </div>
+    
+    <div class="container" id="inputbox" style="text-align: center;">
+        <input type="text" id="name" class="form-control" placeholder="Enter classmate's name">
+        <input type="text" id="section" class="form-control mt-2" placeholder="Enter classmate's section">
+        <input type="number" id="favno" class="form-control mt-2" placeholder="Enter classmate's favorite number">
+        <button id="addButton" class="btn btn-primary mt-2" py-click="addclassmate">Add Classmate</button>
+        <button id="viewButton" class="btn btn-secondary mt-2" py-click="showlist">View Classmates</button>
+    </div>
+
+    <div class="container" id="outputbox" style="margin-top: 20px;">
+        <h2>Classmates List</h2>
+        <ul id="output" class="list-group">
+            
+        </ul>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
